@@ -2,22 +2,17 @@ import Card from "./components/Card";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-4">
-      <Card title="Eko" onHover={() => console.log("Card hovered")}>
-        This is the content of the card.
+    <main >
+      <Card title="Welcome" onHover={() => console.log("Card hovered")}>
+        <h1 className="text-2xl">Catatan belajar next js</h1>
+        <ul>
+          <li>Belajar fetch api</li>
+          <li>Belajar form</li>
+          <li>Belajar membuat grafik</li>
+        </ul>
       </Card> 
       
-      <Card title="Ardli" onHover={() => console.log("Card hovered")}>
-        This is the content of the card.
-      </Card> 
-
-      <Card title="Ali" onHover={() => console.log("Card hovered")}>
-        This is the content of the card.
-      </Card> 
-
-      <Card title="Ivan" onHover={() => console.log("Card hovered")}>
-        This is the content of the card.
-      </Card> 
+    
     </main>
   )
 }

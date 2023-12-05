@@ -32,10 +32,11 @@ export default async function About() {
                         // </div>
                         <Card key={user.id} title={`${user.name}`} onHover={() => console.log("Card hovered")}>
                             <h1>{ user.name}</h1>
-                            <h1>{ user.email}</h1>
-                            
-
-                      </Card>
+                            <h1>{user.email}</h1>
+                            <br />
+                            <Link href={`about/${user.id}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Click Here</Link>
+                           
+                        </Card>
 
                     ))}
             </main> 

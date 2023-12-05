@@ -9,6 +9,7 @@ export default function Navbar() {
       <div className="flex items-center space-x-4">
         <span className="text-white"><Link href="/">Home</Link></span>
         <span className="text-white"><Link href="/about">About</Link></span>
+        <span className="text-white"><Link href="/form">Form</Link></span>
       </div>
       <button className="bg-green-500 text-white p-2 rounded">Login</button>
           </div>
