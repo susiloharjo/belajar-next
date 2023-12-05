@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { Suspense } from "react"
 import Loading from "../loading"
+import Card from "../components/Card";
+
 
 async function getData() {
     // test delay
@@ -17,18 +19,28 @@ export default async function About() {
     const users = await getData()
     return (
         <Suspense fallback={<Loading/>}>
-        <>
-            {users.map((user) => (
-                <div key={user.id}>
-                    <h1>{user.name} {user.email}
-                    {/* <a href={`/about/${user.id}`}>Click Here</a> */}
-              
-                    <Link className="text-blue-600 hover:text-blue-200" href={`about/${user.id}`}> Click Here</Link>
-                    </h1>
-                </div>
+        
+            <main className="grid grid-cols-4">
+                        
+                    {users.map((user) => (
+                        // <div key={user.id}>
+                        //     <h1>{user.name} {user.email}
+                        //     {/* <a href={`/about/${user.id}`}>Click Here</a> */}
+                    
+                        //     <Link className="text-blue-600 hover:text-blue-200" href={`about/${user.id}`}> Click Here</Link>
+                        //     </h1>
+                        // </div>
+                        <Card key={user.id} title={`${user.name}`} onHover={() => console.log("Card hovered")}>
+                            <h1>{ user.name}</h1>
+                            <h1>{ user.email}</h1>
+                            
 
-            ))}
-            </>
+                      </Card>
+
+                    ))}
+            </main> 
+            
+                
             </Suspense>
     )
 
