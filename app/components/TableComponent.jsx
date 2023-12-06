@@ -5,17 +5,17 @@ import DataTable from 'react-data-table-component';
 const columns = [
   {
     name: 'ID',
-    selector: 'id',
+    selector: (row) => row.id,
     sortable: true,
   },
   {
     name: 'Name',
-    selector: 'name',
+    selector: (row) => row.name,
     sortable: true,
   },
   {
     name: 'Email',
-    selector: 'email',
+    selector: (row) => row.email,
     sortable: true,
   },
 ];

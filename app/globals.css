@@ -13,6 +13,11 @@ body {
     box-sizing: border-box;
   }
 
+img {
+    height: 390px !important;
+    width: auto;
+}
+
 
 .full-table {
     width: 800px;

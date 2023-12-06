@@ -8,6 +8,9 @@ import { CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import { BookOpenIcon } from '@heroicons/react/24/outline';
 import TableComponent from '../components/TableComponent';
+import { CarouselImg } from '../components/CarouselImg';
+import { ListWithSelectedItem } from '../components/ListWithSelectedItem';
+import { DefaultTimeline } from '../components/DefaultTimeline';
 
 export default function Dashboard() {
   return (
@@ -84,7 +87,21 @@ export default function Dashboard() {
 
         <CardSimple>
           <div className="chart">
-            <LineChart />
+            <CarouselImg />
+          </div>
+        </CardSimple>
+      </div>
+
+      <div className="grid gap-2 grid-cols-2 ">
+        <CardSimple>
+          <div>
+            <ListWithSelectedItem />
+          </div>
+        </CardSimple>
+
+        <CardSimple>
+          <div className="chart">
+            <DefaultTimeline />
           </div>
         </CardSimple>
       </div>
