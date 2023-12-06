@@ -7,30 +7,9 @@ import LineChart from '../components/LineChart';
 import { CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import { BookOpenIcon } from '@heroicons/react/24/outline';
+import TableComponent from '../components/TableComponent';
 
 export default function Dashboard() {
-  //   const data = {
-  //     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-  //     datasets: [
-  //       {
-  //         label: 'Sales',
-  //         data: [12, 19, 3, 5, 2],
-  //         backgroundColor: 'rgba(75, 192, 192, 0.2)',
-  //         borderColor: 'rgba(75, 192, 192, 1)',
-  //         borderWidth: 1,
-  //       },
-  //     ],
-  //   };
-
-  //   const options = {
-  //     scales: {
-  //       y: {
-  //         type: 'linear',
-  //         beginAtZero: true,
-  //       },
-  //     },
-  //   };
-
   return (
     <div>
       <div className="grid gap-2 grid-cols-4">
@@ -86,6 +65,20 @@ export default function Dashboard() {
         <CardSimple>
           <div className="chart">
             <BarChart />
+          </div>
+        </CardSimple>
+
+        <CardSimple>
+          <div className="chart">
+            <LineChart />
+          </div>
+        </CardSimple>
+      </div>
+
+      <div className="grid gap-2 grid-cols-2  mt-10">
+        <CardSimple>
+          <div className="full">
+            <TableComponent />
           </div>
         </CardSimple>
 
