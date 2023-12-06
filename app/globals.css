@@ -6,3 +6,10 @@
 body {
     background-color: #f0f0f0;
 }
+
+.card .chart {
+    width: 100% !important;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: red;
+  }
