@@ -5,6 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - https://heroicons.com/
 - https://github.com/tailwindlabs/heroicons
 - https://unpkg.com/browse/@heroicons/react@2.0.18/24/outline/
+- https://github.com/enaqx/awesome-react
+- https://tailwindcomponents.com/
 
 
 ## Getting Started
