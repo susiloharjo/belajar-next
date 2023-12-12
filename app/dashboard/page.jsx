@@ -13,7 +13,7 @@ import { ListWithSelectedItem } from '../components/ListWithSelectedItem';
 import { DefaultTimeline } from '../components/DefaultTimeline';
 import { Suspense } from 'react';
 import Loading from '../loading';
-
+import LineChartBulan from '../components/LineChartBulan';
 
 export default function Dashboard() {
   return (
@@ -106,6 +106,12 @@ export default function Dashboard() {
           <CardSimple>
             <div className="chart">
               <DefaultTimeline />
+            </div>
+          </CardSimple>
+
+          <CardSimple>
+            <div className="chart h-96 w-auto">
+              <LineChartBulan />
             </div>
           </CardSimple>
         </div>
