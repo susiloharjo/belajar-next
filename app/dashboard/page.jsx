@@ -14,6 +14,7 @@ import { DefaultTimeline } from '../components/DefaultTimeline';
 import { Suspense } from 'react';
 import Loading from '../loading';
 import LineChartBulan from '../components/LineChartBulan';
+import CardLine from '../components/CardLine';
 
 export default function Dashboard() {
   return (
@@ -115,6 +116,23 @@ export default function Dashboard() {
             </div>
           </CardSimple>
         </div>
+      </div>
+      <div className="flex flex-row gap-2">
+        <CardLine title="User Detail" warna="border-l-[10px] border-green-400">
+          <div>Test</div>
+        </CardLine>
+
+        <CardLine title="User Detail" warna="border-l-[10px] border-red-400">
+          <div>Test</div>
+        </CardLine>
+
+        <CardLine title="User Detail" warna="border-l-[10px] border-orange-400">
+          <div>Test</div>
+        </CardLine>
+
+        <CardLine title="User Detail" warna="border-l-[10px] border-blue-400">
+          <div>Test</div>
+        </CardLine>
       </div>
     </Suspense>
   );
